@@ -1,0 +1,89 @@
+{
+  "_args": [
+    [
+      "git+https://github.com/xgustavoh/schema-object.git",
+      "/root/nodes/hunterfm-ws"
+    ]
+  ],
+  "_from": "git+https://github.com/xgustavoh/schema-object.git",
+  "_id": "schema-object@git+https://github.com/xgustavoh/schema-object.git#31f299f4b76c047c8ce31c9dbf4e3c8741a2ffd8",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/schema-object",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/xgustavoh/schema-object.git",
+    "rawSpec": "git+https://github.com/xgustavoh/schema-object.git",
+    "saveSpec": "git+https://github.com/xgustavoh/schema-object.git",
+    "fetchSpec": "https://github.com/xgustavoh/schema-object.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/xgustavoh/schema-object.git#31f299f4b76c047c8ce31c9dbf4e3c8741a2ffd8",
+  "_spec": "git+https://github.com/xgustavoh/schema-object.git",
+  "_where": "/root/nodes/hunterfm-ws",
+  "author": {
+    "name": "Scott Hovestadt"
+  },
+  "bugs": {
+    "url": "https://github.com/scotthovestadt/schema-object/issues"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "harmony-reflect": "^1.6.0",
+    "lodash": "^4.17.10"
+  },
+  "description": "Enforce schema on JavaScript objects, including type, transformation, and validation. Supports extends, sub-schemas, and arrays.",
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-plugin-transform-builtin-extend": "1.1.2",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-preset-es2015": "6.24.1",
+    "gulp": "3.9.1",
+    "gulp-babel": "7.0.1",
+    "gulp-mocha": "6.0.0",
+    "gulp-mocha-phantomjs": "0.12.2",
+    "in-publish": "^2.0.0",
+    "load-plugins": "2.1.2",
+    "minimist": "1.2.0",
+    "should": "13.x.x"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=0.11"
+  },
+  "files": [
+    "dist",
+    "typescript"
+  ],
+  "homepage": "https://github.com/scotthovestadt/schema-object#readme",
+  "keywords": [
+    "javascript",
+    "schema",
+    "extends",
+    "type",
+    "transformation",
+    "validation",
+    "object",
+    "array"
+  ],
+  "license": "BSD",
+  "main": "dist/schemaobject.js",
+  "name": "schema-object",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/scotthovestadt/schema-object.git"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "prepublish": "in-publish && gulp build || not-in-publish",
+    "test": "gulp test-node"
+  },
+  "types": "./typescript/schemaobject.d.ts",
+  "version": "4.0.11"
+}
